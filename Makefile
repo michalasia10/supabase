@@ -46,3 +46,10 @@ github.traction:
 
 dev:
 	vercel dev --listen 8080 --local-config vercel-local.json
+
+
+start:
+	docker-compose -f docker/docker-compose.yml up -d
+
+stop:
+	docker-compose -f docker/docker-compose.yml down
